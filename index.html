@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lior Tal | DevOps Engineer & Full Stack Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader">
+        <div class="loader-content">
+            <div class="spinner"></div>
+            <p>Initializing DevOps Pipeline...</p>
+        </div>
+    </div>
+
+    <!-- Particle Background -->
+    <canvas id="particles"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-terminal"></i>
+                <span>Lior Tal</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#pipeline" class="nav-link">Pipeline</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="typing-container">
+                    <h1 class="hero-title">
+                        <span class="static-text">Hi, I'm</span>
+                        <span class="typing-text"></span>
+                        <span class="cursor">|</span>
+                    </h1>
+                </div>
+                <p class="hero-subtitle fade-in-up" data-delay="0.3">DevOps Engineer | Full Stack Developer | Cloud & Automation Specialist</p>
+                <div class="hero-description fade-in-up" data-delay="0.5">
+                    <p>Hands-on DevOps engineer with a strong software background, specializing in turning manual processes into automated, scalable pipelines. Experienced in building, deploying, and managing cloud-native infrastructures on AWS, Azure, and Kubernetes.</p>
+                </div>
+                <div class="hero-buttons fade-in-up" data-delay="0.7">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View Projects</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Get In Touch</span>
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-elements">
+                    <div class="floating-icon docker" data-speed="2">
+                        <i class="fab fa-docker"></i>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <div class="floating-icon kubernetes" data-speed="1.5">
+                        <i class="fab fa-kubernetes"></i>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <div class="floating-icon aws" data-speed="2.5">
+                        <i class="fab fa-aws"></i>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <div class="floating-icon jenkins" data-speed="1.8">
+                        <i class="fab fa-jenkins"></i>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <div class="floating-icon git" data-speed="2.2">
+                        <i class="fab fa-git-alt"></i>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <div class="floating-icon terraform" data-speed="1.7">
+                        <i class="fas fa-code"></i>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <div class="floating-icon ansible" data-speed="2.3">
+                        <i class="fab fa-linux"></i>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <div class="floating-icon prometheus" data-speed="1.9">
+                        <i class="fas fa-chart-line"></i>
+                        <div class="icon-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="arrow">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-line"></span>
+                <span class="title-text">About Me</span>
+                <span class="title-line"></span>
+            </h2>
+            <div class="about-content">
+                <div class="about-card about-card-main">
+                    <div class="about-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>About Me</h3>
+                    <p>Hands-on DevOps engineer with a strong software background, specializing in turning manual processes into automated, scalable pipelines. Experienced in building, deploying, and managing cloud-native infrastructures on AWS, Azure, and Kubernetes, with automation tools like Terraform, Ansible, and CI/CD practices. Passionate about continuous improvement, learning new technologies, and enabling teams to deliver reliable software efficiently.</p>
+                    <p style="margin-top: 1rem; font-style: italic; color: var(--accent-color);">Full Stack Developer with DevOps focus - Combining software engineering expertise with infrastructure automation.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Automation Expert</h3>
+                    <p>Specializing in infrastructure automation, I transform manual processes into efficient, repeatable workflows using IaC (Terraform, Bicep, CloudFormation) and scripting (Python, Bash).</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud & Containers</h3>
+                    <p>Designing and implementing scalable cloud solutions on AWS and Azure. Experienced with Docker, Kubernetes (EKS, AKS), serverless architectures, and container orchestration.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>CI/CD & DevOps</h3>
+                    <p>Building robust CI/CD pipelines using Jenkins, Azure DevOps, GitLab CI, and GitHub Actions. Implementing GitOps workflows with ArgoCD and Helm for automated deployments.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Full Stack Development</h3>
+                    <p>Experienced in web development with React, Vue.js, Next.js, Node.js, and REST APIs. Proficient in databases (MongoDB, MySQL, PostgreSQL) and modern JavaScript frameworks.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Monitoring & Security</h3>
+                    <p>Implementing comprehensive monitoring solutions with Prometheus, Grafana, ELK Stack, and CloudWatch. Experience with static analysis tools like SonarQube, Trivy, and Snyk.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-line"></span>
+                <span class="title-text">Technical Skills</span>
+                <span class="title-line"></span>
+            </h2>
+            <div class="skills-grid">
+                <div class="skill-card" data-skill="cloud">
+                    <div class="skill-header">
+                        <i class="fas fa-cloud"></i>
+                        <h3>Cloud Platforms</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">AWS (EC2, S3, Lambda, EKS, IAM)</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Azure (AKS, Key Vault, Redis)</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">CloudWatch</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-skill="container">
+                    <div class="skill-header">
+                        <i class="fas fa-cube"></i>
+                        <h3>Containers & Orchestration</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Docker</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Kubernetes</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">ECS/EKS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-skill="cicd">
+                    <div class="skill-header">
+                        <i class="fas fa-code-branch"></i>
+                        <h3>CI/CD Tools</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Jenkins</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Azure DevOps</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">GitLab CI</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">GitHub Actions</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">ArgoCD</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Helm</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="82"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-skill="iac">
+                    <div class="skill-header">
+                        <i class="fas fa-file-code"></i>
+                        <h3>Infrastructure as Code</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Terraform</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="92"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Bicep (Azure)</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Ansible</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">CloudFormation</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-skill="monitoring">
+                    <div class="skill-header">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Monitoring & Logging</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Prometheus</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Grafana</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="82"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">ELK Stack</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="78"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-skill="scripting">
+                    <div class="skill-header">
+                        <i class="fas fa-terminal"></i>
+                        <h3>Programming & Scripting</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Bash</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript (Node.js)</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Java (Basics)</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="65"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-card" data-skill="webdev">
+                    <div class="skill-header">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Web Development</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">React</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Vue.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Next.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Node.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">REST APIs</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-card" data-skill="databases">
+                    <div class="skill-header">
+                        <i class="fas fa-database"></i>
+                        <h3>Databases</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">MongoDB</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">MySQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">PostgreSQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Firebase</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-card" data-skill="security">
+                    <div class="skill-header">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Security & Analysis</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">SonarQube</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Trivy</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Snyk</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pipeline Animation Section -->
+    <section id="pipeline" class="pipeline-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-line"></span>
+                <span class="title-text">CI/CD Pipeline Flow</span>
+                <span class="title-line"></span>
+            </h2>
+            <div class="pipeline-container">
+                <div class="pipeline-progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <div class="pipeline-stages-wrapper">
+                    <div class="pipeline-stage" data-stage="1">
+                        <div class="stage-icon">
+                            <i class="fab fa-git-alt"></i>
+                        </div>
+                        <div class="stage-content">
+                            <h3>Source</h3>
+                            <p>Code Repository</p>
+                        </div>
+                        <div class="stage-progress-indicator"></div>
+                    </div>
+                    
+                    <div class="pipeline-connector">
+                        <div class="connector-line"></div>
+                    </div>
+                    
+                    <div class="pipeline-stage" data-stage="2">
+                        <div class="stage-icon">
+                            <i class="fas fa-code-branch"></i>
+                        </div>
+                        <div class="stage-content">
+                            <h3>Build</h3>
+                            <p>Compile & Package</p>
+                        </div>
+                        <div class="stage-progress-indicator"></div>
+                    </div>
+                    
+                    <div class="pipeline-connector">
+                        <div class="connector-line"></div>
+                    </div>
+                    
+                    <div class="pipeline-stage" data-stage="3">
+                        <div class="stage-icon">
+                            <i class="fas fa-vial"></i>
+                        </div>
+                        <div class="stage-content">
+                            <h3>Test</h3>
+                            <p>Unit & Integration</p>
+                        </div>
+                        <div class="stage-progress-indicator"></div>
+                    </div>
+                    
+                    <div class="pipeline-connector">
+                        <div class="connector-line"></div>
+                    </div>
+                    
+                    <div class="pipeline-stage" data-stage="4">
+                        <div class="stage-icon">
+                            <i class="fab fa-docker"></i>
+                        </div>
+                        <div class="stage-content">
+                            <h3>Containerize</h3>
+                            <p>Docker Image</p>
+                        </div>
+                        <div class="stage-progress-indicator"></div>
+                    </div>
+                    
+                    <div class="pipeline-connector">
+                        <div class="connector-line"></div>
+                    </div>
+                    
+                    <div class="pipeline-stage" data-stage="5">
+                        <div class="stage-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="stage-content">
+                            <h3>Deploy</h3>
+                            <p>Production</p>
+                        </div>
+                        <div class="stage-progress-indicator"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-line"></span>
+                <span class="title-text">Featured Projects</span>
+                <span class="title-line"></span>
+            </h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-icon"><i class="fab fa-microsoft"></i></div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Azure Infrastructure & CI/CD Pipeline</h3>
+                        <p>A capstone project led by Bynet demonstrating complete DevOps lifecycle implementation on Microsoft Azure. Features Infrastructure as Code (Bicep) to provision AKS clusters, Redis Cache, Azure Key Vault, and monitoring tools. Includes a secure CI/CD pipeline using Azure DevOps and Docker, with GitOps deployment via ArgoCD and static code analysis via SonarQube. The application is deployed in a production-grade Kubernetes environment with network policies, admission controls, and automated scaling.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Azure</span>
+                            <span class="tech-tag">AKS</span>
+                            <span class="tech-tag">Bicep</span>
+                            <span class="tech-tag">Azure DevOps</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">ArgoCD</span>
+                            <span class="tech-tag">SonarQube</span>
+                            <span class="tech-tag">Kubernetes</span>
+                            <span class="tech-tag">Redis</span>
+                            <span class="tech-tag">Key Vault</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="https://lior-cv.tal-handassa.com/" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-icon"><i class="fab fa-aws"></i></div>
+                    </div>
+                    <div class="project-content">
+                        <h3>AWS Resume Challenge</h3>
+                        <p>Built a serverless resume website hosted on AWS using S3, CloudFront, Route53, and automated CI/CD pipeline with GitHub Actions. Infrastructure deployed using Terraform following Infrastructure as Code best practices.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">AWS</span>
+                            <span class="tech-tag">S3</span>
+                            <span class="tech-tag">CloudFront</span>
+                            <span class="tech-tag">Terraform</span>
+                            <span class="tech-tag">GitHub Actions</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-icon"><i class="fas fa-code-branch"></i></div>
+                    </div>
+                    <div class="project-content">
+                        <h3>GitOps Pipeline - EKS Microservices</h3>
+                        <p>Implemented a GitOps pipeline deploying microservices to EKS with automated monitoring, blue-green rollouts, and comprehensive CI/CD using Jenkins/GitLab CI. Infrastructure managed with Terraform and Helm charts for application deployment.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">EKS</span>
+                            <span class="tech-tag">Kubernetes</span>
+                            <span class="tech-tag">ArgoCD</span>
+                            <span class="tech-tag">Helm</span>
+                            <span class="tech-tag">Jenkins</span>
+                            <span class="tech-tag">Terraform</span>
+                            <span class="tech-tag">Prometheus</span>
+                            <span class="tech-tag">Grafana</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-line"></span>
+                <span class="title-text">Get In Touch</span>
+                <span class="title-line"></span>
+            </h2>
+            <div class="contact-content">
+                <p class="contact-description">I'm always open to discussing DevOps opportunities, automation challenges, or collaboration on interesting projects. Feel free to reach out!</p>
+                <div class="contact-links">
+                    <a href="mailto:Lior.tal13@gmail.com" class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <span>Email</span>
+                        <small>Lior.tal13@gmail.com</small>
+                    </a>
+                    <a href="tel:+972544202997" class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <span>Phone</span>
+                        <small>0544202997</small>
+                    </a>
+                    <a href="https://linktr.ee/liortal_" class="contact-item" target="_blank">
+                        <div class="contact-icon">
+                            <i class="fas fa-link"></i>
+                        </div>
+                        <span>Linktree</span>
+                        <small>linktr.ee/liortal_</small>
+                    </a>
+                    <a href="https://github.com" class="contact-item" target="_blank">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <span>GitHub</span>
+                        <small>View My Work</small>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Lior Tal - DevOps Engineer & Full Stack Developer. Built with passion for automation and innovation.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
