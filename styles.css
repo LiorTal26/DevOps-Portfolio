@@ -1187,10 +1187,17 @@ section {
 }
 
 .contact-links {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contact-item-github {
+    grid-column: 1 / -1;
+    justify-self: center;
+    max-width: 250px;
 }
 
 .contact-item {
@@ -1205,7 +1212,9 @@ section {
     border-radius: 15px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     transition: all 0.4s ease;
-    min-width: 140px;
+    width: 100%;
+    min-height: 180px;
+    justify-content: center;
     position: relative;
     overflow: hidden;
 }
@@ -1302,6 +1311,23 @@ section {
         font-size: 1.2rem;
     }
 
+    .hero-description {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+    }
+
     .projects-grid,
     .skills-grid {
         grid-template-columns: 1fr;
@@ -1311,17 +1337,126 @@ section {
         grid-template-columns: 1fr;
     }
 
+    .about-card {
+        padding: 1.5rem;
+    }
+
+    .skill-card {
+        padding: 1.5rem;
+    }
+
+    .project-content {
+        padding: 1.5rem;
+    }
+
+    .project-content h3 {
+        font-size: 1.3rem;
+    }
+
+    .project-content p {
+        font-size: 0.95rem;
+    }
+
     .contact-links {
-        flex-direction: column;
-        align-items: center;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .contact-item-github {
+        grid-column: 1;
+        max-width: 100%;
+    }
+
+    .contact-item {
+        min-height: 160px;
+        padding: 1.5rem;
     }
 
     .section-title {
         flex-direction: column;
         gap: 10px;
+        font-size: 2rem;
     }
 
     .title-line {
         max-width: 50px;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    .floating-icon {
+        font-size: 2.5rem;
+    }
+
+    .floating-icon.docker { top: 5%; left: 5%; }
+    .floating-icon.kubernetes { top: 15%; right: 5%; }
+    .floating-icon.aws { bottom: 25%; left: 10%; }
+    .floating-icon.jenkins { top: 45%; right: 5%; }
+    .floating-icon.git { bottom: 15%; right: 20%; }
+    .floating-icon.terraform { bottom: 5%; left: 40%; }
+    .floating-icon.ansible { top: 65%; left: 20%; }
+    .floating-icon.prometheus { top: 35%; left: 60%; }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .hero-description {
+        font-size: 0.9rem;
+    }
+
+    .section-title {
+        font-size: 1.75rem;
+    }
+
+    .about-card h3,
+    .project-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .skill-header h3 {
+        font-size: 1.1rem;
+    }
+
+    .contact-item {
+        padding: 1.25rem;
+        min-height: 150px;
+    }
+
+    .contact-icon {
+        font-size: 2rem;
+    }
+
+    .project-image {
+        height: 150px;
+    }
+
+    .project-icon {
+        font-size: 3rem;
+    }
+
+    .pipeline-stage {
+        min-width: 120px;
+        padding: 1rem 0.75rem;
+    }
+
+    .stage-content h3 {
+        font-size: 1rem;
+    }
+
+    .stage-content p {
+        font-size: 0.75rem;
     }
 }
